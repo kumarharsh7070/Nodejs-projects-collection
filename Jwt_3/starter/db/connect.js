@@ -11,3 +11,4 @@ const connectDB = (url)=>{
 }
  
 module.exports = connectDB
+// mongo connection
