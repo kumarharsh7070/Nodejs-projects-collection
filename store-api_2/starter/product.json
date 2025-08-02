@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Accent Chair",
+    "price": 25,
+    "company": "marcos",
+    "rating": 4
+  },
+  {
+    "name": "Wooden Table",
+    "price": 85,
+    "company": "ikea",
+    "rating": 4.5
+  },
+  {
+    "name": "Leather Sofa",
+    "price": 150,
+    "company": "liddy",
+    "rating": 4.8
+  },
+  {
+    "name": "Dining Set",
+    "price": 300,
+    "company": "caressa",
+    "rating": 4.6
+  },
+  {
+    "name": "Bookshelf",
+    "price": 55,
+    "company": "ikea",
+    "rating": 4.2
+  },
+  {
+    "name": "Office Chair",
+    "price": 45,
+    "company": "marcos",
+    "rating": 4.0
+  },
+  {
+    "name": "Modern Lamp",
+    "price": 20,
+    "company": "liddy",
+    "rating": 4.3
+  },
+  {
+    "name": "Classic Desk",
+    "price": 110,
+    "company": "caressa",
+    "rating": 4.7
+  },
+  {
+    "name": "Queen Bed",
+    "price": 220,
+    "company": "ikea",
+    "rating": 4.6
+  },
+  {
+    "name": "harsh",
+    "price": 60,
+    "company": "liddy",
+    "rating": 4.4
+  }
+]
