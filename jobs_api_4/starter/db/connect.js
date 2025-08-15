@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const connectDB = (url)=>{
     return mongoose.connect(url)
     .then(() => {
-    console.log('✅ MongoDB connected successfully to "storeapi" database 🚀');
+    console.log('✅ MongoDB connected successfully to "Jobs_api" database 🚀');
   })
   .catch((error) => {
     console.log("❌ MongoDB connection error:", error);
