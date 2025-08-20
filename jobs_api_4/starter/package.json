@@ -21,6 +21,7 @@
     "content-type": "^1.0.5",
     "cookie": "^0.7.2",
     "cookie-signature": "^1.2.2",
+    "cors": "^2.8.5",
     "debug": "^4.4.1",
     "depd": "^2.0.0",
     "dotenv": "^17.2.1",
@@ -33,6 +34,7 @@
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
     "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
     "fill-range": "^7.1.1",
     "finalhandler": "^2.1.0",
     "forwarded": "^0.2.0",
@@ -45,6 +47,7 @@
     "has-flag": "^3.0.0",
     "has-symbols": "^1.1.0",
     "hasown": "^2.0.2",
+    "helmet": "^8.1.0",
     "http-errors": "^2.0.0",
     "http-status-codes": "^2.3.0",
     "iconv-lite": "^0.6.3",
@@ -100,7 +103,8 @@
     "undefsafe": "^2.0.5",
     "unpipe": "^1.0.0",
     "vary": "^1.1.2",
-    "wrappy": "^1.0.2"
+    "wrappy": "^1.0.2",
+    "xss-clean": "^0.1.4"
   },
   "scripts": {
     "start": "node app.js",

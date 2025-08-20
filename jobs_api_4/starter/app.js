@@ -1,5 +1,10 @@
 require('dotenv').config()
-// require('express-async-errors')
+// security packages
+const helmet = require("helmet");
+const cors = require("cors");
+const xss = require('xss-clean')
+const rateLimiter = require('express-rate-limit')
+
 
 const express = require('express')
 const app = express()
@@ -13,7 +18,15 @@ const errorHandlerMiddleware = require('./middleware/error-handler');
 const connectDB = require('./db/connect')
 const authenticateUser = require('./middleware/authentication')
 // Middleware
+app.set('trust proxy',1)
+app.use(rateLimiter({
+  windowMs:15 * 60 * 1000,  //15 minutes
+  max:100,
+}))
 app.use(express.json())
+app.use(cors());
+app.use(helmet());
+app.use(xss());
 
 // Routes
 const authRouter = require('./routes/auth')
