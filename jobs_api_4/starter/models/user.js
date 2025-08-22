@@ -6,13 +6,13 @@ const Userschema = new mongoose.Schema({
  
     name:{
         type:String,
-        require:[true,'Please provide valid name'],
-        minlenght:3,
+        required:[true,'Please provide valid name'],
+        minlength:3,
         maxlength:50,
     },
     email:{
         type:String,
-        require:[true,'Please provide valid email'],
+        required:[true,'Please provide valid email'],
        match: [
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}(\.[0-9]{1,3}){3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     'Please provide a valid email'

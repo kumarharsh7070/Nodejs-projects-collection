@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jobs Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Jobs Manager</h1>
+    <p class="tagline">Manage your job applications easily 🚀</p>
+  </header>
+
+  <!-- Auth Section -->
+  <main>
+    <section class="card">
+      <h2>Register</h2>
+      <input type="text" id="regName" placeholder="Name" />
+      <input type="email" id="regEmail" placeholder="Email" />
+      <input type="password" id="regPassword" placeholder="Password" />
+      <button onclick="register()">Register</button>
+    </section>
+
+    <section class="card">
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email" />
+      <input type="password" id="loginPassword" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="card hidden" id="jobsSection">
+      <h2>Add Job</h2>
+      <input type="text" id="jobCompany" placeholder="Company" />
+      <input type="text" id="jobPosition" placeholder="Position" />
+      <button onclick="createJob()">Add Job</button>
+
+      <h2>Your Jobs</h2>
+      <ul id="jobsList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ using Node.js + Express + MongoDB</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
